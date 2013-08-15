@@ -1,13 +1,28 @@
+/*$baseFontFamily: Yesteryear;
+@import url(http://fonts.googleapis.com/css?family=Yesteryear); */
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$btnPrimaryBackground: green;
+
+
 @import 'bootstrap';
 
 body {
 	padding-top: 60px;
+	background-color: $black;
 }
 
 @import 'bootstrap-responsive';
+
+.navbar-inner{
+	@include box-shadow(none !important);
+	border: 0;
+}
 
 .footer {
 	margin-top: 50px;
 	color:$grayLight;
 	a {color: $gray;}
 }
+

@@ -1,13 +1,27 @@
+<% if user_signed_in? %>
+
 <div class="hero-unit">
-	<h1>Welcome Jonny!</h1>
+	<h1>Great you made it here!</h1>
 	<p>
-		If you are not Jonny it is ridiculous you even found that page! 
+		Checking out the members section there is some love to find!
+	</p>
+	<p><%= link_to "Find love!", "https://www.facebook.com/jonathan.fearns" ,class: "btn btn-primary btn-lg" %>
+  	</p>
+
+<%else%>
+
+<div class="hero-unit">
+	<h1>Welcome You!</h1>
+	<p>
+		It is ridiculous you found this page, but now that you are here: There is loads of love for registered users, sos ign below!
 	</p>
 	<p>	
 		Get in touch by clicking on my name below or start coding yourself with 
 		<%= link_to "One Month Rails", "http:onemonthrails.com" %>
 	</p>
 
-  	<p><%= link_to "Sign up Now!", "#", class: "btn btn-primary btn-lg" %>
+  	<p><%= link_to "Register and gimme love!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
   	</p>
 </div>
+
+<%end%>

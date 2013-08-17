@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
+gem 'devise'
+gem 'simple_form'
+gem 'protected_attributes'
 
 gem 'rails_12factor', group: :production
 

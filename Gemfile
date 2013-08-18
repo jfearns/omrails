@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc2'
-gem "actionpack", "~> 4.0.0.rc2"
+gem "actionpack", "~> 4.0.0"
 gem 'devise'
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'protected_attributes'
